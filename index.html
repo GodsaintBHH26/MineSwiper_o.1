@@ -10,21 +10,47 @@
     <h1>MineSwiper</h1>
     <p>Try to clear all the blocks without getting bombed. There are 3X3 boxes here. <br> For each box you'll gain a point. <br>You can restart the game if you lose. Try to get the highest score possible.</p>
 
-    <div class="minebox">
-       <button>❔</button>
-       <button>❔</button>
-       <button>❔</button>
-       <button>❔</button>
-       <button>❔</button>
-       <button>❔</button>
-       <button>❔</button>
-       <button>❔</button>
-       <button>❔</button>
+    <div class="mineBox">
+       <button onclick="
+       checkMine('1');
+       ">❔</button>
+       <button onclick="
+       checkMine('2');
+       ">❔</button>
+       <button onclick="
+       checkMine('3');
+       ">❔</button>
+       <br>
+       <button onclick="
+       checkMine('4');
+       ">❔</button>
+       <button onclick="
+       checkMine('5');
+       ">❔</button>
+       <button onclick="
+       checkMine('6');
+       ">❔</button>
+       <br>
+       <button onclick="
+       checkMine('7');
+       ">❔</button>
+       <button onclick="
+       checkMine('8');
+       ">❔</button>
+       <button onclick="
+       checkMine('9');
+       ">❔</button>
+       <br>
     </div>
     <br>
 
-    <button>Reset</button>
-    <button>Display score</button>
+    <div class="help">
+        <button>Reset</button>
+        <button onclick="
+        displayScore();
+        " class="good">Display score</button>
+    </div>
+    
 
     <script src="script.js"></script>
 </body>

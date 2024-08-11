@@ -31,16 +31,18 @@ function setMine(){
     }
 }
 
+setMine();
+
 function checkMine(userChoice){
-    switch(userChoice){
-        case 1:
             if(userChoice == intMine){
-
+                alert(`Game over \n You stepped on a mine.`);
             }else{
-
+                score +=1;
             }
-    }
+}
 
+function displayScore(){
+    alert(`Score: ${score}`);
 }
 
 
